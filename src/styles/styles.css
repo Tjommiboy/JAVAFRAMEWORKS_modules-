@@ -1,0 +1,14 @@
+body {
+  background-color: lightblue;
+}
+.text {
+  color: #fff;
+}
+.my-class {
+  color: rebeccapurple;
+  font-weight: bolder;
+}
+
+.primary {
+  background-color: red;
+}
