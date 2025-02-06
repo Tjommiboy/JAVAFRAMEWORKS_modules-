@@ -32,14 +32,26 @@ function App() {
 
   return (
     <>
-      <div className={styles.container}>
-        <Nav isActive={activeBox === 1} onClick={() => toggleBox(1)}>
+      <div className={`${styles.container} flex justify-center items  `}>
+        <Nav
+          isActive={activeBox === 1}
+          onClick={() => toggleBox(1)}
+          className="py-2 px-4 rounded-md hover:bg-gray-200 transition-all"
+        >
           Home
         </Nav>
-        <Nav isActive={activeBox === 2} onClick={() => toggleBox(2)}>
+        <Nav
+          isActive={activeBox === 2}
+          onClick={() => toggleBox(2)}
+          className="py-2 px-4 rounded-md hover:bg-gray-200 transition-all"
+        >
           Products
         </Nav>
-        <Nav isActive={activeBox === 3} onClick={() => toggleBox(3)}>
+        <Nav
+          isActive={activeBox === 3}
+          onClick={() => toggleBox(3)}
+          className="py-2 px-4 rounded-md hover:bg-gray-200 transition-all"
+        >
           About Us
         </Nav>
       </div>
@@ -58,7 +70,7 @@ function App() {
       <div className={styles.container}>Hello world</div>
       <p className={styles.container}>Paragraph 1.</p>
       <h1 className={styles.container}>Products</h1>
-      <ProductsList />
+      <ProductsList className="flex justify-center items-center h-screen" />
       <Conditional />
       <Counter />
     </>
