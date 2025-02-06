@@ -1,5 +1,7 @@
+import React from "react";
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
+
 export const BaseButton = styled.button`
   padding: 10px;
   margin: 10px;

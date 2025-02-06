@@ -1,3 +1,4 @@
+import React from "react";
 function Greeting() {
   const firstName = "Ola";
   const lastName = "Normann";

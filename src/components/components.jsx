@@ -1,3 +1,4 @@
+import React from "react";
 function Products() {
   const products = [
     { id: "3.1", name: "Milk", price: 19.99 },

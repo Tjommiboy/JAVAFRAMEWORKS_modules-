@@ -1,3 +1,4 @@
+import React from "react";
 function Product(props) {
   // The props we pass into a component are available via the
   // "props" parameter of a component.
