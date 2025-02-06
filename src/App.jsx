@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/styles.css";
 import "./styles/styles.scss";
 
-import styles from "./App.module.css";
+// import styles from "./App.module.css";
 import Products from "./components/components";
 import Greeting from "./components/Greeting";
 import Product from "./components/Product";
@@ -32,7 +32,12 @@ function App() {
 
   return (
     <>
-      <div className={`${styles.container} flex justify-center items  `}>
+      <div>
+        <p className="container text-xl font-semibold text-blue-500 bg-gray-400 p-4 rounded-lg shadow-lg">
+          What's up, this is a test
+        </p>
+      </div>
+      <div className={` flex justify-center items  `}>
         <Nav
           isActive={activeBox === 1}
           onClick={() => toggleBox(1)}
@@ -67,9 +72,9 @@ function App() {
         <li>Primary</li>
         <li>Secondary</li>
       </ul>
-      <div className={styles.container}>Hello world</div>
-      <p className={styles.container}>Paragraph 1.</p>
-      <h1 className={styles.container}>Products</h1>
+      <div>Hello world</div>
+      <p>Paragraph 1.</p>
+      <h1>Products</h1>
       <ProductsList className="flex justify-center items-center h-screen" />
       <Conditional />
       <Counter />
